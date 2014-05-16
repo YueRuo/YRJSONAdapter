@@ -26,7 +26,7 @@ A simple category for Objective-C  to make JSON easier
 	//把一个数组转换成JSON格式
 	string=[array JSONString];
 	//把这个数组恢复回来
-	array=[data objectFromJSONString];
+	array=[string objectFromJSONString];
 	
 
 
