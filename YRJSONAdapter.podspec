@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint YRJSONAdapt.podspec' to ensure this is a
+#  Be sure to run `pod spec lint YRJSONAdapter.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,14 +15,14 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "YRJSONAdapt"
+  s.name         = "YRJSONAdapter"
   s.version      = "1.0.0"
   s.summary      = "a easy category to use json."
 
 #  s.description  = <<-DESC
 #                  DESC
 
-  s.homepage     = "https://github.com/YueRuo/YRJSONAdapt"
+  s.homepage     = "https://github.com/YueRuo/YRJSONAdapter"
 #s.screenshots  = ""
 #,"www.example.com/screenshots_2.gif"
 
@@ -73,7 +73,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/YueRuo/YRJSONAdapt.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/YueRuo/YRJSONAdapter.git", :tag => s.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -84,8 +84,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "YRJSONAdapt", "YRJSONAdapt/*.{h,m}"
-  s.exclude_files = "YRJSONAdapt/Exclude"
+  s.source_files  = "YRJSONAdapter", "YRJSONAdapter/*.{h,m}"
+  s.exclude_files = "YRJSONAdapter/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
