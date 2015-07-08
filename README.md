@@ -3,6 +3,10 @@ YRJSONAdapter
 
 A simple category for Objective-C  to make JSON easier
 
+支持Cocoapods安装
+
+	   pod 'YRJSONAdapter', '~> 1.0.0'
+
 
 之前一直很喜欢JSONKit中的category，使用起来更加的简单快捷。
 
