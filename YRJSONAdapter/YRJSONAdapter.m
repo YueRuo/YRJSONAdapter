@@ -112,11 +112,11 @@
 }
 
 +(id)objectFromJSONString:(NSString*)string{
-    NSData *data=[string dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
     return [self objectFromJSONData:data];
 }
 +(id)mutableObjectFromJSONString:(NSString*)string{
-    NSData *data=[string dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
     return [self mutableObjectFromJSONData:data];
 }
 +(id)objectFromJSONData:(NSData*)data{
@@ -127,17 +127,17 @@
 }
 
 +(NSString*)stringWithObject:(id)object{
-    NSString *string=nil;
-    NSData *data=[self dataWithObject:object];
+    NSString *string = nil;
+    NSData *data = [self dataWithObject:object];
     if (data) {
-        string=[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+        string = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
     }
     return string;
 }
 +(NSData*)dataWithObject:(id)object{
-    NSData *data=nil;
+    NSData *data = nil;
     if ([NSJSONSerialization isValidJSONObject:object]) {
-        data=[NSJSONSerialization dataWithJSONObject:object options:NSJSONWritingPrettyPrinted error:nil];
+        data = [NSJSONSerialization dataWithJSONObject:object options:NSJSONWritingPrettyPrinted error:nil];
     }else{
         NSLog(@"--->>object %@ not a json object",object);
     }
