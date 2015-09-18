@@ -5,9 +5,13 @@ A simple category for Objective-C  to make JSON easier
 
 支持Cocoapods安装
 
-	   pod 'YRJSONAdapter', '~> 1.0.0'
+	   pod 'YRJSONAdapter', '~> 1.0.1'
 
 
+最新更新20150918：  
+增加了对JSONKit的常用方法拦截，解决由于第三方库中使用JSONKit导致应用闪退的问题。
+
+---
 之前一直很喜欢JSONKit中的category，使用起来更加的简单快捷。
 
 在iOS5.0以后，系统JSON解析库的产生，尤其是6.0以后性能上的优化，使得我们在使用JSON时可以不再导入其他库，直接使用系统库，但是系统的使用方式略显麻烦，一般需要如下：
