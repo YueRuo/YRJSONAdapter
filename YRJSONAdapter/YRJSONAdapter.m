@@ -137,7 +137,7 @@
 +(NSData*)dataWithObject:(id)object{
     NSData *data = nil;
     if ([NSJSONSerialization isValidJSONObject:object]) {
-        data = [NSJSONSerialization dataWithJSONObject:object options:NSJSONWritingPrettyPrinted error:nil];
+        data = [NSJSONSerialization dataWithJSONObject:object options:kNilOptions error:nil];
     }else{
         NSLog(@"--->>object %@ not a json object",object);
     }
